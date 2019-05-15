@@ -1,0 +1,27 @@
+.price {
+    margin-right: 25px;
+    &__new {
+        font-size: 35px;
+        color: $pinks;
+        font-weight: bold;
+        @include phone() {
+            font-size: 30px;
+        }
+    }
+    &__old {
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: $pinks;
+            position: absolute;
+            top: 7px;
+            left: 0;
+            transform: rotate(10deg);
+        }
+    }
+}

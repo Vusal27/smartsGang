@@ -1,0 +1,24 @@
+.image {
+    width: 190px;
+    height: 270px;
+    position: relative;
+    display: block;
+    @include tablet() {
+        width: 60%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    &__main {
+        height: 100%;
+        width: 100%;
+    }
+    &__gift {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(38%, -10%);
+        @include tablet() {
+            width: 50%;
+        }
+    }
+}
